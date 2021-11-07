@@ -41,5 +41,8 @@ BOARD_BATTERY_DEVICE_NAME := "battery"
 
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
+# HWC
+BOARD_USES_HWC_SERVICES := true
+
 # Override healthd HAL
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.mrvl
