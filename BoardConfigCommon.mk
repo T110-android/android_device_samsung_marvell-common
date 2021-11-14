@@ -21,7 +21,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_ARCH_VARIANT := armv7-a
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
@@ -40,9 +40,6 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 BOARD_BATTERY_DEVICE_NAME := "battery"
 
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
-
-# HWC
-BOARD_USES_HWC_SERVICES := true
 
 # Override healthd HAL
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.mrvl
